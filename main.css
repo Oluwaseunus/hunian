@@ -1,0 +1,357 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 16px; /* Match paragraph font size */
+  font-weight: normal; /* Most paragraphs are not bold */
+  line-height: 1.5; /* Match line height */
+  margin-top: 0; /* Remove default top margin */
+}
+
+ul {
+  list-style: none;
+}
+
+:root {
+  --primary-400: #1b1a1b;
+  --primary-400-rgb: rgb(27, 26, 27);
+  --primary-500: #161516;
+
+  --neutral-50: #fff;
+
+  --secondary-400: #e97951;
+
+  --section-padding: 120px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* utility classes */
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.font-display {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 84px;
+}
+
+.font-body-1 {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: normal;
+}
+
+.font-body-2 {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 32px;
+}
+
+.font-heading-3 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+}
+
+.font-heading-1 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 64px;
+}
+
+.font-heading-4 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 44px;
+}
+
+.font-caption {
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: normal;
+}
+
+/* regular classes 🤭 */
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px var(--section-padding);
+  background-color: var(--primary-500);
+}
+
+.nav__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .nav__link {
+    opacity: 0.5;
+    color: var(--neutral-50);
+    text-transform: uppercase;
+
+    &.nav__link-active {
+      opacity: 1;
+    }
+
+    &:not(:last-of-type) {
+      margin-right: 52px;
+    }
+  }
+}
+
+.nav__icons {
+  li:not(:last-of-type) {
+    margin-right: 32px;
+  }
+}
+
+.hero {
+  position: relative;
+  background-color: var(--primary-500);
+  min-height: 400px;
+  padding: 48px var(--section-padding);
+}
+
+.hero__ellipse-blur {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  filter: blur(75px);
+
+  position: absolute;
+  left: -10%;
+  top: 30%;
+}
+
+.hero__main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 102px;
+  margin-bottom: 36px;
+
+  .hero__main-text {
+    color: var(--neutral-50);
+
+    span {
+      color: var(--secondary-400);
+    }
+  }
+
+  .hero__main-desc-text {
+    color: var(--neutral-50);
+    margin-bottom: 24px;
+  }
+}
+
+.hero__main-desc {
+  width: 437px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+button.primary {
+  border: none;
+  background: none;
+
+  cursor: pointer;
+  border-radius: 50px;
+  font-family: inherit;
+  padding: 18px 24px;
+  font-weight: 500;
+  color: var(--neutral-50);
+  background: linear-gradient(#ffd88c, #e45826);
+}
+
+.hero__main-image-wrapper {
+  height: 526px;
+  background: url(/public/hero.png) no-repeat center;
+  object-fit: contain;
+
+  display: flex;
+  justify-content: center;
+}
+
+.hero__main-info-box {
+  width: 554px;
+  border-radius: 15px;
+  margin-top: auto;
+  margin-bottom: 24px;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  padding: 24px 32px;
+
+  > :not(:last-child) {
+    margin-right: 48px;
+  }
+}
+
+.hero__main-info-item-group {
+  display: flex;
+  justify-content: space-between;
+  color: var(--neutral-50);
+}
+
+.hero__main-info-item-number {
+  span {
+    color: var(--secondary-400);
+  }
+}
+
+section.trusted-by {
+  background-color: var(--neutral-50);
+  padding: 52px var(--section-padding);
+
+  display: flex;
+  align-items: center;
+
+  h3 {
+    margin-right: 200px;
+  }
+
+  ul.trusted-by__icons {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    li {
+      height: 43px;
+    }
+  }
+
+  margin-bottom: 72px;
+}
+
+section.most-viewed {
+  padding: 52px var(--section-padding);
+  background-color: var(--neutral-50);
+
+  .most-viewed__heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 124px;
+  }
+}
+
+.most-viewed__masonry {
+  margin: 0 auto;
+
+  .most-viewed__masonry-gutter {
+    width: 3.3333333333%;
+  }
+
+  .most-viewed__masonry-element {
+    width: 30%;
+    height: 480px;
+    margin-bottom: 16px;
+
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    border-radius: 25px;
+    overflow: hidden;
+    perspective: 1000px;
+    backface-visibility: hidden;
+
+    .most-viewed__masonry-child {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      transform: scale(1);
+      transition: all 0.3s;
+      backface-visibility: hidden;
+
+      display: flex;
+      align-items: flex-end;
+    }
+
+    /* &:hover .most-viewed__masonry-child {
+      transform: scale(1.05);
+    } */
+
+    &.most-viewed__masonry-element-1 .most-viewed__masonry-child {
+      background-image: url(/public/mega-regency.png);
+    }
+
+    &.most-viewed__masonry-element-2 {
+      height: 673px;
+
+      .most-viewed__masonry-child {
+        background-image: url(/public/pasir-raya.png);
+      }
+    }
+
+    &.most-viewed__masonry-element-3 .most-viewed__masonry-child {
+      background-image: url(/public/wibawa-mukti.png);
+    }
+
+    &.most-viewed__masonry-element-4 .most-viewed__masonry-child {
+      background-image: url(/public/mutiara-jaya.png);
+    }
+
+    &.most-viewed__masonry-element-5 {
+      height: 287px;
+
+      .most-viewed__masonry-child {
+        background-image: url(/public/ksb.png);
+      }
+    }
+
+    &.most-viewed__masonry-element-6 .most-viewed__masonry-child {
+      background-image: url(/public/citra-indah.png);
+    }
+
+    .most-viewed__element-details {
+      flex: 1;
+      width: 100%;
+      padding: 20px;
+      color: var(--neutral-50);
+      backdrop-filter: blur(10px);
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      h4 {
+        margin-bottom: -8px;
+      }
+
+      p {
+        font-weight: 600;
+      }
+
+      span {
+        font-size: 14px;
+      }
+    }
+  }
+}

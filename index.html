@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./main.css" />
+
+    <title>Vite App</title>
+  </head>
+  <body>
+    <!-- nav component -->
+
+    <nav class="nav">
+      <img src="/logo.svg" alt="Hunian" />
+
+      <ul class="nav__links">
+        <li class="nav__link nav__link-active">Home</li>
+        <li class="nav__link">Property</li>
+        <li class="nav__link">About</li>
+        <li class="nav__link">Agents</li>
+        <li class="nav__link">Blog</li>
+      </ul>
+
+      <ul class="flex-center nav__icons">
+        <li>
+          <img src="/search.svg" alt="Search" />
+        </li>
+        <li>
+          <img src="/cart.svg" alt="Cart" />
+        </li>
+        <li>
+          <img src="/profile.svg" alt="Profile" />
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <div class="hero__ellipse-blur"></div>
+        <div class="hero__main">
+          <h2 class="font-display hero__main-text">
+            The Best Place To Find Your Dream
+            <span> Property </span>
+          </h2>
+
+          <div class="flex-center hero__main-desc">
+            <p class="font-body-2 hero__main-desc-text">
+              We are a real estate agency that will assist you in building your
+              dreams, we will also assist in making a home design that suits
+              your taste
+            </p>
+            <button type="button" class="primary">Let's Discuss</button>
+          </div>
+        </div>
+
+        <div class="hero__main-image-wrapper">
+          <div class="hero__main-info-box">
+            <ul class="hero__main-info-item-group">
+              <li class="hero__main-info-item">
+                <p class="font-heading-3 hero__main-info-item-number">
+                  300
+                  <span class="hero__main-info-plus">+</span>
+                </p>
+                <span class="font-body-2 hero__main-info-text"
+                  >Happy Clients</span
+                >
+              </li>
+
+              <li class="hero__main-info-item">
+                <p class="font-heading-3 hero__main-info-item-number">
+                  200<span class="hero__main-info-plus">+</span>
+                </p>
+                <span class="font-body-2 hero__main-info-text"
+                  >Premium Products</span
+                >
+              </li>
+
+              <li class="hero__main-info-item">
+                <p class="font-heading-3 hero__main-info-item-number">
+                  100 <span class="hero__main-info-plus">+</span>
+                </p>
+                <span class="font-body-2 hero__main-info-text">Awards</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="trusted-by">
+        <h3 class="font-heading-3">Trusted By</h3>
+
+        <ul class="trusted-by__icons">
+          <li>
+            <img src="/jago.png" alt="Jago" />
+          </li>
+          <li>
+            <img src="/gopay.png" alt="GoPay" />
+          </li>
+          <li>
+            <img src="/mandiri.png" alt="Mandiri" />
+          </li>
+          <li>
+            <img src="/ovo.png" alt="Ovo" />
+          </li>
+        </ul>
+      </section>
+
+      <section class="most-viewed">
+        <div class="most-viewed__heading">
+          <h2 class="font-heading-1 most-viewed-header">
+            Our most viewed properties
+          </h2>
+
+          <button class="primary">See more</button>
+        </div>
+
+        <div class="container">
+          <ul class="most-viewed__masonry" style="--columns: 4">
+            <li class="most-viewed__masonry-gutter"></li>
+
+            <li
+              class="most-viewed__masonry-element most-viewed__masonry-element-1"
+            >
+              <div class="most-viewed__masonry-child">
+                <div class="most-viewed__element-details">
+                  <div class="most-viewed__element-details-info">
+                    <h4 class="font-heading-4">Mega Regency</h4>
+                    <span class="font-caption">Bekasi, Jawa Barat</span>
+                  </div>
+                  <p class="font-body-1 most-viewed__element-details-pricing">
+                    IDR 500jt
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li
+              class="most-viewed__masonry-element most-viewed__masonry-element-2"
+            >
+              <div class="most-viewed__masonry-child">
+                <div class="most-viewed__element-details">
+                  <div class="most-viewed__element-details-info">
+                    <h4 class="font-heading-4">Pasir Raya</h4>
+                    <span class="font-caption">Bekasi, Jawa Barat</span>
+                  </div>
+                  <p class="font-body-1 most-viewed__element-details-pricing">
+                    IDR 500jt
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li
+              class="most-viewed__masonry-element most-viewed__masonry-element-3"
+            >
+              <div class="most-viewed__masonry-child">
+                <div class="most-viewed__element-details">
+                  <div class="most-viewed__element-details-info">
+                    <h4 class="font-heading-4">Wibawa Mukti</h4>
+                    <span class="font-caption">Bekasi, Jawa Barat</span>
+                  </div>
+                  <p class="font-body-1 most-viewed__element-details-pricing">
+                    IDR 500jt
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li
+              class="most-viewed__masonry-element most-viewed__masonry-element-4"
+            >
+              <div class="most-viewed__masonry-child">
+                <div class="most-viewed__element-details">
+                  <div class="most-viewed__element-details-info">
+                    <h4 class="font-heading-4">Mutiara Jaya</h4>
+                    <span class="font-caption">Bekasi, Jawa Barat</span>
+                  </div>
+                  <p class="font-body-1 most-viewed__element-details-pricing">
+                    IDR 500jt
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li
+              class="most-viewed__masonry-element most-viewed__masonry-element-5"
+            >
+              <div class="most-viewed__masonry-child">
+                <div class="most-viewed__element-details">
+                  <div class="most-viewed__element-details-info">
+                    <h4 class="font-heading-4">KSB</h4>
+                    <span class="font-caption">Bekasi, Jawa Barat</span>
+                  </div>
+                  <p class="font-body-1 most-viewed__element-details-pricing">
+                    IDR 500jt
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li
+              class="most-viewed__masonry-element most-viewed__masonry-element-6"
+            >
+              <div class="most-viewed__masonry-child">
+                <div class="most-viewed__element-details">
+                  <div class="most-viewed__element-details-info">
+                    <h4 class="font-heading-4">Citra Indah</h4>
+                    <span class="font-caption">Bekasi, Jawa Barat</span>
+                  </div>
+                  <p class="font-body-1 most-viewed__element-details-pricing">
+                    IDR 500jt
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
