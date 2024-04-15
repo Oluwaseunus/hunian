@@ -3,6 +3,7 @@ import Masonry from "masonry-layout"
 const element = document.querySelector("ul.most-viewed__masonry")
 
 const masonry = new Masonry(element, {
+  resize: false,
   fitWidth: true,
   horizontalOrder: true,
   percentPosition: true,
