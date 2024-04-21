@@ -205,7 +205,7 @@ button.primary {
 
 .hero__main-image-wrapper {
   height: 526px;
-  background: url(/public/hero.png) no-repeat center;
+  background: url(/hero.png) no-repeat center;
   object-fit: contain;
 
   display: flex;
@@ -311,35 +311,35 @@ section.most-viewed {
     } */
 
     &.most-viewed__masonry-element-1 .most-viewed__masonry-child {
-      background-image: url(/public/mega-regency.png);
+      background-image: url(/mega-regency.png);
     }
 
     &.most-viewed__masonry-element-2 {
       height: 673px;
 
       .most-viewed__masonry-child {
-        background-image: url(/public/pasir-raya.png);
+        background-image: url(/pasir-raya.png);
       }
     }
 
     &.most-viewed__masonry-element-3 .most-viewed__masonry-child {
-      background-image: url(/public/wibawa-mukti.png);
+      background-image: url(/wibawa-mukti.png);
     }
 
     &.most-viewed__masonry-element-4 .most-viewed__masonry-child {
-      background-image: url(/public/mutiara-jaya.png);
+      background-image: url(/mutiara-jaya.png);
     }
 
     &.most-viewed__masonry-element-5 {
       height: 287px;
 
       .most-viewed__masonry-child {
-        background-image: url(/public/ksb.png);
+        background-image: url(/ksb.png);
       }
     }
 
     &.most-viewed__masonry-element-6 .most-viewed__masonry-child {
-      background-image: url(/public/citra-indah.png);
+      background-image: url(/citra-indah.png);
     }
 
     .most-viewed__element-details {
@@ -445,7 +445,7 @@ section.choose-us {
 section.testimonials {
   color: var(--neutral-50);
   background-color: black;
-  background-image: url(/public/checkered-rectangles.svg);
+  background-image: url(/checkered-rectangles.svg);
 
   .testimonials__heading {
     display: flex;
